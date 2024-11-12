@@ -10,14 +10,34 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    169625,       3352]
-NotebookOptionsPosition[    165126,       3292]
-NotebookOutlinePosition[    165521,       3308]
-CellTagsIndexPosition[    165478,       3305]
+NotebookDataLength[    171850,       3398]
+NotebookOptionsPosition[    167253,       3337]
+NotebookOutlinePosition[    167648,       3353]
+CellTagsIndexPosition[    167605,       3350]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Import", " ", "findLinksPackage"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"$Path", ",", 
+      RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Needs", "[", "\"\<findLinksPackage`\>\"", "]"}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.940375307688158*^9, 3.9403753384338617`*^9}, {
+  3.940375411165372*^9, 3.9403754244453773`*^9}, {3.9403755058808727`*^9, 
+  3.9403755690937443`*^9}, {3.940375706794505*^9, 3.940375709454298*^9}, {
+  3.940376398802454*^9, 3.940376403847587*^9}, {3.940376788591979*^9, 
+  3.940376790886347*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"7a0afba3-d37e-4f82-8c17-6dc0757ec85f"],
+
 Cell[BoxData[
  RowBox[{"(*", 
   RowBox[{"maxnIL", " ", "graph", " ", "of", " ", "order", " ", "6"}], 
@@ -33,7 +53,7 @@ Cell[BoxData[
     RowBox[{"K_", "6"}], "-", "e"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -80,14 +100,15 @@ Cell[BoxData[
        RowBox[{"4", "\[UndirectedEdge]", "2"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9344788513812227`*^9, 3.934478865493952*^9}, {
-  3.934478911596966*^9, 3.934478916298979*^9}, {3.9344789934196367`*^9, 
-  3.9344790221883593`*^9}},
- CellLabel->
-  "In[1092]:=",ExpressionUUID->"c8423196-8919-429d-a082-eb51c2ea0929"],
+   3.934478911596966*^9, 3.934478916298979*^9}, {3.9344789934196367`*^9, 
+   3.9344790221883593`*^9}, 3.940375348527166*^9, {3.940375500108629*^9, 
+   3.9403755337897177`*^9}, 3.940375658367834*^9, {3.940376461228682*^9, 
+   3.940376481684263*^9}, 3.940377173532823*^9},
+ CellLabel->"In[20]:=",ExpressionUUID->"c8423196-8919-429d-a082-eb51c2ea0929"],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -103,7 +124,7 @@ Cell[BoxData[
    RowBox[{"7", "_", "1"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -155,13 +176,14 @@ Cell[BoxData[
        RowBox[{"1", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.933694004786006*^9, 3.933694016351944*^9}, {
-  3.933694127891432*^9, 3.933694212016116*^9}},
- CellLabel->
-  "In[883]:=",ExpressionUUID->"cb59fade-99e7-4a8b-85df-e608942838bb"],
+   3.933694127891432*^9, 3.933694212016116*^9}, {3.940376461230641*^9, 
+   3.940376461231258*^9}, 
+   3.9403771735341263`*^9},ExpressionUUID->"cb59fade-99e7-4a8b-85df-\
+e608942838bb"],
 
 Cell[BoxData[
  RowBox[{
@@ -169,7 +191,7 @@ Cell[BoxData[
    RowBox[{"7", "_", "2"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -225,14 +247,14 @@ Cell[BoxData[
        RowBox[{"2", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
-  3.933694484532282*^9, 3.933694490885516*^9}, {3.933694553388809*^9, 
-  3.933694555577549*^9}},
- CellLabel->
-  "In[894]:=",ExpressionUUID->"50c83f86-9f8e-45b4-b91c-9beea2a7320f"],
+   3.933694484532282*^9, 3.933694490885516*^9}, {3.933694553388809*^9, 
+   3.933694555577549*^9}, {3.940376461232358*^9, 3.9403764612329493`*^9}, 
+   3.940377173538958*^9},ExpressionUUID->"50c83f86-9f8e-45b4-b91c-\
+9beea2a7320f"],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -248,7 +270,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "1"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -308,15 +330,15 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
    3.933694487620908*^9, 3.933694492679019*^9}, 3.933694589824995*^9, {
    3.93369462885786*^9, 3.9336946301347237`*^9}, {3.933694739432547*^9, 
-   3.933694848505289*^9}},
- CellLabel->
-  "In[910]:=",ExpressionUUID->"d066567d-df90-44c7-8b81-448c56d9e910"],
+   3.933694848505289*^9}, {3.940376461234017*^9, 3.940376461234603*^9}, 
+   3.940377173542823*^9},ExpressionUUID->"d066567d-df90-44c7-8b81-\
+448c56d9e910"],
 
 Cell[BoxData[
  RowBox[{
@@ -324,7 +346,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "2"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -383,15 +405,16 @@ Cell[BoxData[
        RowBox[{"4", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
    3.933694494890827*^9, 3.933694501226259*^9}, 3.9336945931560593`*^9, {
    3.93369462607156*^9, 3.9336946264377832`*^9}, {3.933694916164803*^9, 
-   3.933694984408787*^9}, {3.933695042857773*^9, 3.933695085405506*^9}},
- CellLabel->
-  "In[916]:=",ExpressionUUID->"346c470c-f66a-4484-b769-012366c68f73"],
+   3.933694984408787*^9}, {3.933695042857773*^9, 3.933695085405506*^9}, {
+   3.940376461237076*^9, 3.940376461237626*^9}, 
+   3.940377173546549*^9},ExpressionUUID->"346c470c-f66a-4484-b769-\
+012366c68f73"],
 
 Cell[BoxData[
  RowBox[{
@@ -399,7 +422,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "3"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -455,14 +478,15 @@ Cell[BoxData[
        RowBox[{"6", "\[UndirectedEdge]", "2"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
-  3.933694503391005*^9, 3.933694508415038*^9}, {3.933694596188492*^9, 
-  3.933694623912363*^9}, {3.933695181302141*^9, 3.933695240341629*^9}},
- CellLabel->
-  "In[920]:=",ExpressionUUID->"e006ff1e-5b87-4b80-9215-f38433fbfeae"],
+   3.933694503391005*^9, 3.933694508415038*^9}, {3.933694596188492*^9, 
+   3.933694623912363*^9}, {3.933695181302141*^9, 3.933695240341629*^9}, {
+   3.940376461239649*^9, 3.940376461240158*^9}, 
+   3.94037717354982*^9},ExpressionUUID->"e006ff1e-5b87-4b80-9215-\
+f38433fbfeae"],
 
 Cell[BoxData[
  RowBox[{
@@ -470,7 +494,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "4"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -528,14 +552,15 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
-  3.9336945107886972`*^9, 3.9336945147422657`*^9}, {3.933694599332069*^9, 
-  3.933694619889472*^9}, {3.9336952921142063`*^9, 3.933695389077579*^9}},
- CellLabel->
-  "In[924]:=",ExpressionUUID->"348e13e6-70ba-4053-9914-275a61a90257"],
+   3.9336945107886972`*^9, 3.9336945147422657`*^9}, {3.933694599332069*^9, 
+   3.933694619889472*^9}, {3.9336952921142063`*^9, 3.933695389077579*^9}, {
+   3.940376461242037*^9, 3.940376461242538*^9}, 
+   3.940377173553149*^9},ExpressionUUID->"348e13e6-70ba-4053-9914-\
+275a61a90257"],
 
 Cell[BoxData[
  RowBox[{
@@ -543,7 +568,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "5"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -604,14 +629,14 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "2"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
-  3.933694602297071*^9, 3.933694615761466*^9}, {3.933695415619052*^9, 
-  3.9336955136656313`*^9}},
- CellLabel->
-  "In[928]:=",ExpressionUUID->"60122042-8ae3-43f6-ac83-be9a6a5fcdae"],
+   3.933694602297071*^9, 3.933694615761466*^9}, {3.933695415619052*^9, 
+   3.9336955136656313`*^9}, {3.940376461244465*^9, 3.940376461244988*^9}, 
+   3.94037717355613*^9},ExpressionUUID->"60122042-8ae3-43f6-ac83-\
+be9a6a5fcdae"],
 
 Cell[BoxData[
  RowBox[{
@@ -619,7 +644,7 @@ Cell[BoxData[
    RowBox[{"8", "_", "6"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -679,14 +704,14 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9336942974209337`*^9, 3.933694447325357*^9}, {
-  3.933694605522273*^9, 3.933694611885878*^9}, {3.933695545530447*^9, 
-  3.933695636357439*^9}},
- CellLabel->
-  "In[932]:=",ExpressionUUID->"5b1fa6aa-6724-4b8f-af8c-c9df13b10068"],
+   3.933694605522273*^9, 3.933694611885878*^9}, {3.933695545530447*^9, 
+   3.933695636357439*^9}, {3.940376461246834*^9, 3.940376461247362*^9}, 
+   3.940377173558909*^9},ExpressionUUID->"5b1fa6aa-6724-4b8f-af8c-\
+c9df13b10068"],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -702,7 +727,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "1"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -762,8 +787,8 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -783,8 +808,9 @@ Cell[BoxData[
    3.933559999023633*^9}, {3.9335600782975807`*^9, 3.933560270832343*^9}, {
    3.9335603545980463`*^9, 3.933560475250445*^9}, {3.933693362405719*^9, 
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
-   3.93369392852586*^9, 
-   3.933693934623899*^9}},ExpressionUUID->"f6739a3a-cdd9-4072-8fb2-\
+   3.93369392852586*^9, 3.933693934623899*^9}, {3.940376461249331*^9, 
+   3.940376461249789*^9}, 
+   3.940377173561968*^9},ExpressionUUID->"f6739a3a-cdd9-4072-8fb2-\
 2fee142fe9cb"],
 
 Cell[BoxData[
@@ -793,7 +819,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "2"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -850,8 +876,8 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "7"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -872,9 +898,10 @@ Cell[BoxData[
    3.9335603545980463`*^9, 3.933560475250445*^9}, {3.933693362405719*^9, 
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.93369568991181*^9, 
-   3.933695694184654*^9}, {3.9336977734308023`*^9, 3.933697857504311*^9}},
- CellLabel->
-  "In[937]:=",ExpressionUUID->"ea18d170-33ed-4992-a95a-55b24f62e04c"],
+   3.933695694184654*^9}, {3.9336977734308023`*^9, 3.933697857504311*^9}, {
+   3.9403764612517223`*^9, 3.940376461252192*^9}, 
+   3.940377173564728*^9},ExpressionUUID->"ea18d170-33ed-4992-a95a-\
+55b24f62e04c"],
 
 Cell[BoxData[
  RowBox[{
@@ -882,7 +909,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "3"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -943,8 +970,8 @@ Cell[BoxData[
        RowBox[{"9", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -965,9 +992,10 @@ Cell[BoxData[
    3.9335603545980463`*^9, 3.933560475250445*^9}, {3.933693362405719*^9, 
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
-   3.933695699682723*^9}, {3.9336978935853643`*^9, 3.933698001557186*^9}},
- CellLabel->
-  "In[941]:=",ExpressionUUID->"77e4b7f1-785d-40f5-a259-99d69ba38522"],
+   3.933695699682723*^9}, {3.9336978935853643`*^9, 3.933698001557186*^9}, {
+   3.9403764612542*^9, 3.9403764612547293`*^9}, 
+   3.9403771735674067`*^9},ExpressionUUID->"77e4b7f1-785d-40f5-a259-\
+99d69ba38522"],
 
 Cell[BoxData[
  RowBox[{
@@ -975,7 +1003,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "5"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1038,8 +1066,8 @@ Cell[BoxData[
        RowBox[{"2", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1060,9 +1088,10 @@ Cell[BoxData[
    3.9335603545980463`*^9, 3.933560475250445*^9}, {3.933693362405719*^9, 
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
-   3.93369572315961*^9}, {3.933698032415019*^9, 3.933698126633683*^9}},
- CellLabel->
-  "In[945]:=",ExpressionUUID->"ef20dad1-db73-4806-beed-2c39f18920d4"],
+   3.93369572315961*^9}, {3.933698032415019*^9, 3.933698126633683*^9}, {
+   3.94037646125657*^9, 3.94037646125706*^9}, 
+   3.940377173570031*^9},ExpressionUUID->"ef20dad1-db73-4806-beed-\
+2c39f18920d4"],
 
 Cell[BoxData[
  RowBox[{
@@ -1070,7 +1099,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "8"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1133,8 +1162,8 @@ Cell[BoxData[
        RowBox[{"6", "\[UndirectedEdge]", "2"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1155,9 +1184,10 @@ Cell[BoxData[
    3.9335603545980463`*^9, 3.933560475250445*^9}, {3.933693362405719*^9, 
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
-   3.933695732527842*^9}, {3.93369814377678*^9, 3.933698239432004*^9}},
- CellLabel->
-  "In[949]:=",ExpressionUUID->"70f37e2a-09e8-4d55-9ad8-9cbcd7fc27bd"],
+   3.933695732527842*^9}, {3.93369814377678*^9, 3.933698239432004*^9}, {
+   3.940376461258924*^9, 3.940376461259376*^9}, 
+   3.94037717357274*^9},ExpressionUUID->"70f37e2a-09e8-4d55-9ad8-\
+9cbcd7fc27bd"],
 
 Cell[BoxData[
  RowBox[{
@@ -1165,7 +1195,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "9"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1229,8 +1259,8 @@ Cell[BoxData[
        RowBox[{"6", "\[UndirectedEdge]", "1"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1252,9 +1282,10 @@ Cell[BoxData[
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957383080397`*^9, 3.933695739849637*^9}, {
-   3.933698267779601*^9, 3.933698369217952*^9}},
- CellLabel->
-  "In[953]:=",ExpressionUUID->"559eab21-b17b-46cd-991b-693c5e767eec"],
+   3.933698267779601*^9, 3.933698369217952*^9}, {3.94037646126115*^9, 
+   3.940376461261581*^9}, 
+   3.940377173575395*^9},ExpressionUUID->"559eab21-b17b-46cd-991b-\
+693c5e767eec"],
 
 Cell[BoxData[
  RowBox[{
@@ -1262,7 +1293,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "11"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1326,8 +1357,8 @@ Cell[BoxData[
        RowBox[{"6", "\[UndirectedEdge]", "1"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1349,9 +1380,10 @@ Cell[BoxData[
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
-   3.9336983852733297`*^9, 3.933698465968007*^9}},
- CellLabel->
-  "In[957]:=",ExpressionUUID->"c9ed26d0-8488-40ed-af44-5f5d8dedb014"],
+   3.9336983852733297`*^9, 3.933698465968007*^9}, {3.940376461263336*^9, 
+   3.940376461263761*^9}, 
+   3.940377173577899*^9},ExpressionUUID->"c9ed26d0-8488-40ed-af44-\
+5f5d8dedb014"],
 
 Cell[BoxData[
  RowBox[{
@@ -1359,7 +1391,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "12"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1419,8 +1451,8 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1442,9 +1474,10 @@ Cell[BoxData[
    3.933693680522217*^9}, {3.933693854701386*^9, 3.933693866577248*^9}, {
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695775839301*^9}, {
-   3.933698488707974*^9, 3.933698553159039*^9}},
- CellLabel->
-  "In[961]:=",ExpressionUUID->"5ddd174b-b41c-4968-8043-83d0405a888d"],
+   3.933698488707974*^9, 3.933698553159039*^9}, {3.940376461265546*^9, 
+   3.9403764612659616`*^9}, 
+   3.94037717358044*^9},ExpressionUUID->"5ddd174b-b41c-4968-8043-\
+83d0405a888d"],
 
 Cell[BoxData[
  RowBox[{
@@ -1452,7 +1485,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "13"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1512,8 +1545,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1536,9 +1569,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.933695779484374*^9, 3.933695781612081*^9}, {3.933698576241631*^9, 
-   3.933698666806888*^9}},
- CellLabel->
-  "In[965]:=",ExpressionUUID->"bbea92bf-f055-4fd8-9bb8-854146882695"],
+   3.933698666806888*^9}, {3.9403764612677298`*^9, 3.940376461268166*^9}, 
+   3.940377173582851*^9},ExpressionUUID->"bbea92bf-f055-4fd8-9bb8-\
+854146882695"],
 
 Cell[BoxData[
  RowBox[{
@@ -1546,7 +1579,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "14"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1609,8 +1642,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1633,9 +1666,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.933695784688609*^9, 3.933695786178199*^9}, {3.933698685422904*^9, 
-   3.933698751837873*^9}},
- CellLabel->
-  "In[969]:=",ExpressionUUID->"5a06d870-63ea-40e7-857e-013260e175b2"],
+   3.933698751837873*^9}, {3.940376461269857*^9, 3.940376461270256*^9}, 
+   3.940377173585253*^9},ExpressionUUID->"5a06d870-63ea-40e7-857e-\
+013260e175b2"],
 
 Cell[BoxData[
  RowBox[{
@@ -1643,7 +1676,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "15"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1702,8 +1735,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1726,9 +1759,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336957893884783`*^9, 3.93369579110835*^9}, {3.933698767425468*^9, 
-   3.933698838044388*^9}},
- CellLabel->
-  "In[973]:=",ExpressionUUID->"a0e55b44-75b6-4c31-b4d8-6b4556f2b6b5"],
+   3.933698838044388*^9}, {3.940376461271847*^9, 3.940376461272244*^9}, 
+   3.940377173587614*^9},ExpressionUUID->"a0e55b44-75b6-4c31-b4d8-\
+6b4556f2b6b5"],
 
 Cell[BoxData[
  RowBox[{
@@ -1736,7 +1769,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "16"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1799,8 +1832,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1823,9 +1856,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336957944089622`*^9, 3.9336957966895857`*^9}, {3.9336988635082912`*^9, 
-   3.933698957646707*^9}},
- CellLabel->
-  "In[977]:=",ExpressionUUID->"9b5900f7-2bae-4a17-be75-ab3175c47fdf"],
+   3.933698957646707*^9}, {3.9403764612738256`*^9, 3.94037646127422*^9}, 
+   3.940377173589957*^9},ExpressionUUID->"9b5900f7-2bae-4a17-be75-\
+ab3175c47fdf"],
 
 Cell[BoxData[
  RowBox[{
@@ -1833,7 +1866,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "17"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1896,8 +1929,8 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "9"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -1920,9 +1953,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.933695800475814*^9, 3.933695803066474*^9}, {3.933699573234127*^9, 
-   3.933699645545762*^9}},
- CellLabel->
-  "In[981]:=",ExpressionUUID->"f3ca8955-5a62-41f6-a341-bafd0249aee0"],
+   3.933699645545762*^9}, {3.940376461275763*^9, 3.940376461276145*^9}, 
+   3.940377173592292*^9},ExpressionUUID->"f3ca8955-5a62-41f6-a341-\
+bafd0249aee0"],
 
 Cell[BoxData[
  RowBox[{
@@ -1930,7 +1963,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "18"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -1994,8 +2027,8 @@ Cell[BoxData[
        RowBox[{"5", "\[UndirectedEdge]", "1"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2018,9 +2051,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695810238158*^9}, {3.9336996608730927`*^9, 
-   3.933699728520383*^9}},
- CellLabel->
-  "In[985]:=",ExpressionUUID->"ff8a260e-0397-4525-a479-6c6d0f6dc19d"],
+   3.933699728520383*^9}, {3.940376461277688*^9, 3.940376461278077*^9}, 
+   3.940377173594591*^9},ExpressionUUID->"ff8a260e-0397-4525-a479-\
+6c6d0f6dc19d"],
 
 Cell[BoxData[
  RowBox[{
@@ -2028,7 +2061,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "19"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2091,8 +2124,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2115,9 +2148,9 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695830385077*^9}, {3.93369975001973*^9, 
-   3.933699807417811*^9}},
- CellLabel->
-  "In[989]:=",ExpressionUUID->"8a4662cd-0e8e-47ae-b2cb-c384b95a19c4"],
+   3.933699807417811*^9}, {3.940376461279828*^9, 3.940376461280249*^9}, 
+   3.940377173596888*^9},ExpressionUUID->"8a4662cd-0e8e-47ae-b2cb-\
+c384b95a19c4"],
 
 Cell[BoxData[
  RowBox[{
@@ -2125,7 +2158,7 @@ Cell[BoxData[
    RowBox[{"9", "_", "20"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2185,8 +2218,8 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2209,9 +2242,10 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.933699861207958*^9, 
-   3.9336998687312517`*^9}, {3.9336999052245827`*^9, 3.933699976894045*^9}},
- CellLabel->
-  "In[1024]:=",ExpressionUUID->"02df03b8-6509-4ff4-9254-1aed909a4486"],
+   3.9336998687312517`*^9}, {3.9336999052245827`*^9, 3.933699976894045*^9}, {
+   3.9403764612818947`*^9, 3.9403764612823*^9}, 
+   3.940377173599114*^9},ExpressionUUID->"02df03b8-6509-4ff4-9254-\
+1aed909a4486"],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -2229,7 +2263,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "1"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2285,8 +2319,8 @@ Cell[BoxData[
        RowBox[{"4", "\[UndirectedEdge]", "9"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2309,9 +2343,10 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
-   3.933695903853156*^9}, {3.93370014196667*^9, 3.933700197924037*^9}},
- CellLabel->
-  "In[1028]:=",ExpressionUUID->"e7c3ee4c-1cec-4333-ac08-0b2b50d8eab8"],
+   3.933695903853156*^9}, {3.93370014196667*^9, 3.933700197924037*^9}, {
+   3.940376461283883*^9, 3.940376461284279*^9}, 
+   3.9403771736012983`*^9},ExpressionUUID->"e7c3ee4c-1cec-4333-ac08-\
+0b2b50d8eab8"],
 
 Cell[CellGroupData[{
 
@@ -2321,7 +2356,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "2"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2381,8 +2416,8 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "1"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2405,9 +2440,10 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
-   3.933695924848625*^9}, {3.933700257862852*^9, 3.933700329081785*^9}},
- CellLabel->
-  "In[1032]:=",ExpressionUUID->"bc289bcb-a187-4bbe-9cef-16d967acfab1"],
+   3.933695924848625*^9}, {3.933700257862852*^9, 3.933700329081785*^9}, {
+   3.940376461285742*^9, 3.940376461286125*^9}, 
+   3.940377173603374*^9},ExpressionUUID->"bc289bcb-a187-4bbe-9cef-\
+16d967acfab1"],
 
 Cell[BoxData["\<\"No links found.\"\>"], "Print",
  CellChangeTimes->{3.933700330740014*^9},
@@ -2424,7 +2460,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "3"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2481,8 +2517,8 @@ Cell[BoxData[
        RowBox[{"4", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2505,9 +2541,10 @@ Cell[BoxData[
    3.93369392852586*^9, 3.933693934623899*^9}, {3.933695696708871*^9, 
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
-   3.933695929424922*^9}, {3.933700357028936*^9, 3.933700402390716*^9}},
- CellLabel->
-  "In[1036]:=",ExpressionUUID->"cc7244d7-e028-4528-9ac0-ccae619d16ef"],
+   3.933695929424922*^9}, {3.933700357028936*^9, 3.933700402390716*^9}, {
+   3.940376461287574*^9, 3.940376461287951*^9}, 
+   3.9403771736055527`*^9},ExpressionUUID->"cc7244d7-e028-4528-9ac0-\
+ccae619d16ef"],
 
 Cell[BoxData["\<\"No links found.\"\>"], "Print",
  CellChangeTimes->{3.9337004042944307`*^9},
@@ -2522,7 +2559,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "4"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2585,8 +2622,8 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2610,9 +2647,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.9336959354529953`*^9}, {3.933702228632164*^9, 3.933702231104125*^9}, {
-   3.9337072805274143`*^9, 3.933707374746882*^9}},
- CellLabel->
-  "In[1077]:=",ExpressionUUID->"f325e68b-49e4-4aaf-be8b-e025983b170a"],
+   3.9337072805274143`*^9, 3.933707374746882*^9}, {3.940376461290464*^9, 
+   3.940376461290848*^9}, 
+   3.9403771736077642`*^9},ExpressionUUID->"f325e68b-49e4-4aaf-be8b-\
+e025983b170a"],
 
 Cell[BoxData[
  RowBox[{
@@ -2620,7 +2658,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "5"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2681,8 +2719,8 @@ Cell[BoxData[
        RowBox[{"2", "\[UndirectedEdge]", "8"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2706,9 +2744,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695938533188*^9, 3.933695940096085*^9}, {
-   3.933702462853567*^9, 3.9337025303574944`*^9}},
- CellLabel->
-  "In[1042]:=",ExpressionUUID->"b0a1bc85-5705-4db1-b51e-bb0774caff91"],
+   3.933702462853567*^9, 3.9337025303574944`*^9}, {3.940376461292348*^9, 
+   3.940376461292708*^9}, 
+   3.940377173609823*^9},ExpressionUUID->"b0a1bc85-5705-4db1-b51e-\
+bb0774caff91"],
 
 Cell[BoxData[
  RowBox[{
@@ -2716,7 +2755,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "6"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2775,8 +2814,8 @@ Cell[BoxData[
        RowBox[{"8", "\[UndirectedEdge]", "6"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2800,9 +2839,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695944895404*^9, 3.9336959470008163`*^9}, {
-   3.9337029154281178`*^9, 3.933702978498261*^9}},
- CellLabel->
-  "In[1047]:=",ExpressionUUID->"0e9fbf2f-1cab-4192-a218-825a17666cae"],
+   3.9337029154281178`*^9, 3.933702978498261*^9}, {3.940376461294136*^9, 
+   3.9403764612945127`*^9}, 
+   3.940377173611939*^9},ExpressionUUID->"0e9fbf2f-1cab-4192-a218-\
+825a17666cae"],
 
 Cell[BoxData[
  RowBox[{
@@ -2810,7 +2850,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "7"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2869,8 +2909,8 @@ Cell[BoxData[
        RowBox[{"3", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2894,9 +2934,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695951497451*^9, 3.9336959530603456`*^9}, {
-   3.933703416909523*^9, 3.9337034832289467`*^9}},
- CellLabel->
-  "In[1052]:=",ExpressionUUID->"c510e7f2-7c31-44b8-91f6-7ddbfec4104e"],
+   3.933703416909523*^9, 3.9337034832289467`*^9}, {3.9403764612959843`*^9, 
+   3.94037646129635*^9}, 
+   3.9403771736140137`*^9},ExpressionUUID->"c510e7f2-7c31-44b8-91f6-\
+7ddbfec4104e"],
 
 Cell[BoxData[
  RowBox[{
@@ -2904,7 +2945,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "8"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -2967,8 +3008,8 @@ Cell[BoxData[
        RowBox[{"7", "\[UndirectedEdge]", "9"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -2992,9 +3033,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695956168169*^9, 3.933695957637767*^9}, {
-   3.9337038510472107`*^9, 3.9337039185898037`*^9}},
- CellLabel->
-  "In[1057]:=",ExpressionUUID->"a6f21878-3abb-4fea-9954-a83ee5a55c71"],
+   3.9337038510472107`*^9, 3.9337039185898037`*^9}, {3.9403764612977953`*^9, 
+   3.940376461298169*^9}, 
+   3.940377173616083*^9},ExpressionUUID->"a6f21878-3abb-4fea-9954-\
+a83ee5a55c71"],
 
 Cell[BoxData[
  RowBox[{
@@ -3002,7 +3044,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "9"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -3066,8 +3108,8 @@ Cell[BoxData[
        RowBox[{"1", "\[UndirectedEdge]", "7"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -3091,9 +3133,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695961369946*^9, 3.9336959630539827`*^9}, {
-   3.9337044971187267`*^9, 3.933704556215322*^9}},
- CellLabel->
-  "In[1062]:=",ExpressionUUID->"adaefeaa-3077-453f-ad5a-c593725aa43a"],
+   3.9337044971187267`*^9, 3.933704556215322*^9}, {3.940376461299633*^9, 
+   3.940376461300024*^9}, 
+   3.940377173618238*^9},ExpressionUUID->"adaefeaa-3077-453f-ad5a-\
+c593725aa43a"],
 
 Cell[BoxData[
  RowBox[{
@@ -3101,7 +3144,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "10"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -3164,8 +3207,8 @@ Cell[BoxData[
        RowBox[{"9", "\[UndirectedEdge]", "5"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -3189,9 +3232,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695966087967*^9, 3.933695967394886*^9}, {
-   3.933705351060886*^9, 3.9337054061664886`*^9}},
- CellLabel->
-  "In[1067]:=",ExpressionUUID->"9a29bebe-b2e9-4c1e-b329-488abcae49c6"],
+   3.933705351060886*^9, 3.9337054061664886`*^9}, {3.9403764613015738`*^9, 
+   3.940376461301961*^9}, 
+   3.940377173620575*^9},ExpressionUUID->"9a29bebe-b2e9-4c1e-b329-\
+488abcae49c6"],
 
 Cell[BoxData[
  RowBox[{
@@ -3199,7 +3243,7 @@ Cell[BoxData[
    RowBox[{"NTS_", "9", "_", "11"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"g", "=", 
+    RowBox[{"G", "=", 
      GraphicsBox[
       NamespaceBox["NetworkGraphics",
        DynamicModuleBox[{Typeset`graph = HoldComplete[
@@ -3261,8 +3305,8 @@ Cell[BoxData[
        RowBox[{"4", "\[UndirectedEdge]", "7"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"findLinksInTorusEmbedding", "[", 
-     RowBox[{"g", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
+    RowBox[{"findLinks", "[", 
+     RowBox[{"G", ",", " ", "upEdges", ",", " ", "rightEdges"}], "]"}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.898108082150494*^9, 3.898108136808814*^9}, 
    3.910199575052314*^9, {3.910200175163691*^9, 3.910200251193859*^9}, 
@@ -3286,9 +3330,10 @@ Cell[BoxData[
    3.933695699682723*^9}, {3.9336957435160522`*^9, 3.933695745554772*^9}, {
    3.9336958082098217`*^9, 3.933695837573317*^9}, {3.9336958929053164`*^9, 
    3.933695903853156*^9}, {3.933695970173753*^9, 3.933695971006124*^9}, {
-   3.933706247108466*^9, 3.9337063120228024`*^9}},
- CellLabel->
-  "In[1072]:=",ExpressionUUID->"33bb5c76-4328-4b9f-b25e-18abe2f45244"]
+   3.933706247108466*^9, 3.9337063120228024`*^9}, {3.940376461303459*^9, 
+   3.940376461303864*^9}, 
+   3.940377173622621*^9},ExpressionUUID->"33bb5c76-4328-4b9f-b25e-\
+18abe2f45244"]
 },
 WindowSize->{709, 529},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -3307,53 +3352,54 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 247, 6, 30, "Input",ExpressionUUID->"9b7feda9-e1a1-4d48-884f-daaa87d78397"],
-Cell[808, 28, 2728, 61, 223, "Input",ExpressionUUID->"c8423196-8919-429d-a082-eb51c2ea0929"],
-Cell[3539, 91, 248, 6, 30, "Input",ExpressionUUID->"e8194ce9-2360-47cd-a704-a1dee320b9ab"],
-Cell[3790, 99, 2966, 64, 203, "Input",ExpressionUUID->"cb59fade-99e7-4a8b-85df-e608942838bb"],
-Cell[6759, 165, 3120, 69, 157, "Input",ExpressionUUID->"50c83f86-9f8e-45b4-b91c-9beea2a7320f"],
-Cell[9882, 236, 248, 6, 30, "Input",ExpressionUUID->"de45a72c-4fa7-4ebd-9b1d-69b989e46bdf"],
-Cell[10133, 244, 3389, 74, 192, "Input",ExpressionUUID->"d066567d-df90-44c7-8b81-448c56d9e910"],
-Cell[13525, 320, 3511, 73, 167, "Input",ExpressionUUID->"346c470c-f66a-4484-b769-012366c68f73"],
-Cell[17039, 395, 3272, 69, 208, "Input",ExpressionUUID->"e006ff1e-5b87-4b80-9215-f38433fbfeae"],
-Cell[20314, 466, 3381, 71, 150, "Input",ExpressionUUID->"348e13e6-70ba-4053-9914-275a61a90257"],
-Cell[23698, 539, 3429, 74, 184, "Input",ExpressionUUID->"60122042-8ae3-43f6-ac83-be9a6a5fcdae"],
-Cell[27130, 615, 3441, 73, 201, "Input",ExpressionUUID->"5b1fa6aa-6724-4b8f-af8c-c9df13b10068"],
-Cell[30574, 690, 250, 6, 30, "Input",ExpressionUUID->"1549169e-e479-47c3-a91f-a3f942a951bb"],
-Cell[30827, 698, 4617, 89, 192, "Input",ExpressionUUID->"f6739a3a-cdd9-4072-8fb2-2fee142fe9cb"],
-Cell[35447, 789, 4678, 87, 172, "Input",ExpressionUUID->"ea18d170-33ed-4992-a95a-55b24f62e04c"],
-Cell[40128, 878, 4791, 91, 211, "Input",ExpressionUUID->"77e4b7f1-785d-40f5-a259-99d69ba38522"],
-Cell[44922, 971, 4838, 93, 171, "Input",ExpressionUUID->"ef20dad1-db73-4806-beed-2c39f18920d4"],
-Cell[49763, 1066, 4964, 93, 171, "Input",ExpressionUUID->"70f37e2a-09e8-4d55-9ad8-9cbcd7fc27bd"],
-Cell[54730, 1161, 4967, 95, 172, "Input",ExpressionUUID->"559eab21-b17b-46cd-991b-693c5e767eec"],
-Cell[59700, 1258, 5003, 95, 170, "Input",ExpressionUUID->"c9ed26d0-8488-40ed-af44-5f5d8dedb014"],
-Cell[64706, 1355, 4850, 91, 175, "Input",ExpressionUUID->"5ddd174b-b41c-4968-8043-83d0405a888d"],
-Cell[69559, 1448, 4947, 92, 195, "Input",ExpressionUUID->"bbea92bf-f055-4fd8-9bb8-854146882695"],
-Cell[74509, 1542, 4955, 95, 193, "Input",ExpressionUUID->"5a06d870-63ea-40e7-857e-013260e175b2"],
-Cell[79467, 1639, 4888, 91, 178, "Input",ExpressionUUID->"a0e55b44-75b6-4c31-b4d8-6b4556f2b6b5"],
-Cell[84358, 1732, 5004, 95, 184, "Input",ExpressionUUID->"9b5900f7-2bae-4a17-be75-ab3175c47fdf"],
-Cell[89365, 1829, 4994, 95, 171, "Input",ExpressionUUID->"f3ca8955-5a62-41f6-a341-bafd0249aee0"],
-Cell[94362, 1926, 5018, 96, 195, "Input",ExpressionUUID->"ff8a260e-0397-4525-a479-6c6d0f6dc19d"],
-Cell[99383, 2024, 4996, 95, 183, "Input",ExpressionUUID->"8a4662cd-0e8e-47ae-b2cb-c384b95a19c4"],
-Cell[104382, 2121, 4998, 92, 218, "Input",ExpressionUUID->"02df03b8-6509-4ff4-9254-1aed909a4486"],
-Cell[109383, 2215, 294, 8, 30, "Input",ExpressionUUID->"f339b8b1-c6a2-49df-87c1-8ec601fbe867"],
-Cell[109680, 2225, 4811, 88, 161, "Input",ExpressionUUID->"e7c3ee4c-1cec-4333-ac08-0b2b50d8eab8"],
+Cell[558, 20, 787, 18, 73, "Input",ExpressionUUID->"7a0afba3-d37e-4f82-8c17-6dc0757ec85f"],
+Cell[1348, 40, 247, 6, 30, "Input",ExpressionUUID->"9b7feda9-e1a1-4d48-884f-daaa87d78397"],
+Cell[1598, 48, 2877, 62, 223, "Input",ExpressionUUID->"c8423196-8919-429d-a082-eb51c2ea0929"],
+Cell[4478, 112, 248, 6, 30, "Input",ExpressionUUID->"e8194ce9-2360-47cd-a704-a1dee320b9ab"],
+Cell[4729, 120, 3003, 65, 203, "Input",ExpressionUUID->"cb59fade-99e7-4a8b-85df-e608942838bb"],
+Cell[7735, 187, 3154, 69, 157, "Input",ExpressionUUID->"50c83f86-9f8e-45b4-b91c-9beea2a7320f"],
+Cell[10892, 258, 248, 6, 30, "Input",ExpressionUUID->"de45a72c-4fa7-4ebd-9b1d-69b989e46bdf"],
+Cell[11143, 266, 3419, 74, 192, "Input",ExpressionUUID->"d066567d-df90-44c7-8b81-448c56d9e910"],
+Cell[14565, 342, 3545, 74, 167, "Input",ExpressionUUID->"346c470c-f66a-4484-b769-012366c68f73"],
+Cell[18113, 418, 3307, 70, 208, "Input",ExpressionUUID->"e006ff1e-5b87-4b80-9215-f38433fbfeae"],
+Cell[21423, 490, 3417, 72, 150, "Input",ExpressionUUID->"348e13e6-70ba-4053-9914-275a61a90257"],
+Cell[24843, 564, 3460, 74, 184, "Input",ExpressionUUID->"60122042-8ae3-43f6-ac83-be9a6a5fcdae"],
+Cell[28306, 640, 3473, 73, 201, "Input",ExpressionUUID->"5b1fa6aa-6724-4b8f-af8c-c9df13b10068"],
+Cell[31782, 715, 250, 6, 30, "Input",ExpressionUUID->"1549169e-e479-47c3-a91f-a3f942a951bb"],
+Cell[32035, 723, 4673, 90, 192, "Input",ExpressionUUID->"f6739a3a-cdd9-4072-8fb2-2fee142fe9cb"],
+Cell[36711, 815, 4714, 88, 172, "Input",ExpressionUUID->"ea18d170-33ed-4992-a95a-55b24f62e04c"],
+Cell[41428, 905, 4827, 92, 211, "Input",ExpressionUUID->"77e4b7f1-785d-40f5-a259-99d69ba38522"],
+Cell[46258, 999, 4870, 94, 171, "Input",ExpressionUUID->"ef20dad1-db73-4806-beed-2c39f18920d4"],
+Cell[51131, 1095, 4997, 94, 171, "Input",ExpressionUUID->"70f37e2a-09e8-4d55-9ad8-9cbcd7fc27bd"],
+Cell[56131, 1191, 5000, 96, 172, "Input",ExpressionUUID->"559eab21-b17b-46cd-991b-693c5e767eec"],
+Cell[61134, 1289, 5037, 96, 170, "Input",ExpressionUUID->"c9ed26d0-8488-40ed-af44-5f5d8dedb014"],
+Cell[66174, 1387, 4885, 92, 175, "Input",ExpressionUUID->"5ddd174b-b41c-4968-8043-83d0405a888d"],
+Cell[71062, 1481, 4979, 92, 195, "Input",ExpressionUUID->"bbea92bf-f055-4fd8-9bb8-854146882695"],
+Cell[76044, 1575, 4985, 95, 193, "Input",ExpressionUUID->"5a06d870-63ea-40e7-857e-013260e175b2"],
+Cell[81032, 1672, 4918, 91, 178, "Input",ExpressionUUID->"a0e55b44-75b6-4c31-b4d8-6b4556f2b6b5"],
+Cell[85953, 1765, 5035, 95, 184, "Input",ExpressionUUID->"9b5900f7-2bae-4a17-be75-ab3175c47fdf"],
+Cell[90991, 1862, 5024, 95, 171, "Input",ExpressionUUID->"f3ca8955-5a62-41f6-a341-bafd0249aee0"],
+Cell[96018, 1959, 5048, 96, 195, "Input",ExpressionUUID->"ff8a260e-0397-4525-a479-6c6d0f6dc19d"],
+Cell[101069, 2057, 5026, 95, 183, "Input",ExpressionUUID->"8a4662cd-0e8e-47ae-b2cb-c384b95a19c4"],
+Cell[106098, 2154, 5031, 93, 218, "Input",ExpressionUUID->"02df03b8-6509-4ff4-9254-1aed909a4486"],
+Cell[111132, 2249, 294, 8, 30, "Input",ExpressionUUID->"f339b8b1-c6a2-49df-87c1-8ec601fbe867"],
+Cell[111429, 2259, 4846, 89, 161, "Input",ExpressionUUID->"e7c3ee4c-1cec-4333-ac08-0b2b50d8eab8"],
 Cell[CellGroupData[{
-Cell[114516, 2317, 4967, 92, 181, "Input",ExpressionUUID->"bc289bcb-a187-4bbe-9cef-16d967acfab1"],
-Cell[119486, 2411, 198, 4, 24, "Print",ExpressionUUID->"42650094-463f-4d2c-92c6-e1615bd49849"]
+Cell[116300, 2352, 5000, 93, 181, "Input",ExpressionUUID->"bc289bcb-a187-4bbe-9cef-16d967acfab1"],
+Cell[121303, 2447, 198, 4, 24, "Print",ExpressionUUID->"42650094-463f-4d2c-92c6-e1615bd49849"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[119721, 2420, 4803, 89, 153, "Input",ExpressionUUID->"cc7244d7-e028-4528-9ac0-ccae619d16ef"],
-Cell[124527, 2511, 200, 4, 24, "Print",ExpressionUUID->"f7e7ed99-7987-4a4d-9b80-ad7a3a4fdc7a"]
+Cell[121538, 2456, 4838, 90, 153, "Input",ExpressionUUID->"cc7244d7-e028-4528-9ac0-ccae619d16ef"],
+Cell[126379, 2548, 200, 4, 24, "Print",ExpressionUUID->"f7e7ed99-7987-4a4d-9b80-ad7a3a4fdc7a"]
 }, Open  ]],
-Cell[124742, 2518, 5114, 96, 152, "Input",ExpressionUUID->"f325e68b-49e4-4aaf-be8b-e025983b170a"],
-Cell[129859, 2616, 5001, 94, 151, "Input",ExpressionUUID->"b0a1bc85-5705-4db1-b51e-bb0774caff91"],
-Cell[134863, 2712, 4981, 92, 145, "Input",ExpressionUUID->"0e9fbf2f-1cab-4192-a218-825a17666cae"],
-Cell[139847, 2806, 5002, 92, 155, "Input",ExpressionUUID->"c510e7f2-7c31-44b8-91f6-7ddbfec4104e"],
-Cell[144852, 2900, 5086, 96, 137, "Input",ExpressionUUID->"a6f21878-3abb-4fea-9954-a83ee5a55c71"],
-Cell[149941, 2998, 5126, 97, 151, "Input",ExpressionUUID->"adaefeaa-3077-453f-ad5a-c593725aa43a"],
-Cell[155070, 3097, 5051, 96, 158, "Input",ExpressionUUID->"9a29bebe-b2e9-4c1e-b329-488abcae49c6"],
-Cell[160124, 3195, 4998, 95, 160, "Input",ExpressionUUID->"33bb5c76-4328-4b9f-b25e-18abe2f45244"]
+Cell[126594, 2555, 5149, 97, 152, "Input",ExpressionUUID->"f325e68b-49e4-4aaf-be8b-e025983b170a"],
+Cell[131746, 2654, 5034, 95, 151, "Input",ExpressionUUID->"b0a1bc85-5705-4db1-b51e-bb0774caff91"],
+Cell[136783, 2751, 5016, 93, 145, "Input",ExpressionUUID->"0e9fbf2f-1cab-4192-a218-825a17666cae"],
+Cell[141802, 2846, 5038, 93, 155, "Input",ExpressionUUID->"c510e7f2-7c31-44b8-91f6-7ddbfec4104e"],
+Cell[146843, 2941, 5121, 97, 137, "Input",ExpressionUUID->"a6f21878-3abb-4fea-9954-a83ee5a55c71"],
+Cell[151967, 3040, 5159, 98, 151, "Input",ExpressionUUID->"adaefeaa-3077-453f-ad5a-c593725aa43a"],
+Cell[157129, 3140, 5086, 97, 158, "Input",ExpressionUUID->"9a29bebe-b2e9-4c1e-b329-488abcae49c6"],
+Cell[162218, 3239, 5031, 96, 160, "Input",ExpressionUUID->"33bb5c76-4328-4b9f-b25e-18abe2f45244"]
 }
 ]
 *)
